@@ -8,6 +8,14 @@ screen = Screen()
 screen.setup(width=600, height=600)
 screen.tracer(0)
 
+player = Player()
+
+#screen listeners
+screen.listen()
+screen.onkey(player.move_up, "Up")
+screen.onkey(player.move_left, "Left")
+screen.onkey(player.move_right, "Right")
+
 game = True
 
 while game:
