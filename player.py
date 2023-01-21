@@ -11,3 +11,15 @@ class Player(Turtle):
         self.color("green")
         self.penup()
         self.goto(STARTING_POSITION)
+
+    def move_up(self):
+        new_y = self.ycor() + 20
+        self.goto(self.xcor(), new_y)
+
+    def move_left(self):
+        new_x = self.xcor() + 20
+        self.goto(new_x, self.ycor())
+
+    def move_right(self):
+        new_x = self.xcor() + 20
+        self.goto(new_x, self.ycor())
