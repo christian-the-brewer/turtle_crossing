@@ -6,6 +6,7 @@ from car import Car, COLORS
 
 screen = Screen()
 screen.setup(width=600, height=600)
+screen.bgcolor("black")
 screen.tracer(0)
 
 player = Player()
@@ -21,3 +22,5 @@ game = True
 while game:
     time.sleep(0.1)
     screen.update()
+
+screen.exitonclick()
