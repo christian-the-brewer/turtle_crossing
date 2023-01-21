@@ -20,7 +20,7 @@ screen.onkey(player.move_right, "Right")
 game = True
 
 while game:
-    time.sleep(0.1)
+    time.sleep(0.005)
     screen.update()
 
 screen.exitonclick()
